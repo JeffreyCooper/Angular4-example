@@ -1,4 +1,6 @@
-// Angular 4
+// imports open source code from outside vendor to use in the project
+// Angular 4 (must come first
+// platform browser must come first
 import "@angular/platform-browser";
 import "@angular/platform-browser-dynamic";
 import "@angular/core";
