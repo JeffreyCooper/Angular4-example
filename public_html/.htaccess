@@ -1,6 +1,9 @@
+# basically, this file tells the server to let Angular take control
+# mod rewrite lets the server create fake URLs
 <IfModule mod_rewrite.c>
 	RewriteEngine On
-	# Don't rewrite files or directories
+	# Don't rewrite files (f) or directories (d)
+	# If this file or director exists, leave it alone
 	RewriteCond %{REQUEST_FILENAME} -f [OR]
 	RewriteCond %{REQUEST_FILENAME} -d
 	RewriteRule ^ - [L]
