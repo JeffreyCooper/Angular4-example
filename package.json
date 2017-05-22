@@ -5,14 +5,10 @@
   "author": {
     "name": "Jeffrey Cooper",
     "email": "jcooper37@cnm.edu",
-    "url": "https://bootcamp-coders.cnm.edu/~jcooper37/public_html/angular4-example/"
+    "url": "https://bootcamp-coders.cnm.edu/screencasts/getting-started-with-angular2/"
   },
   "contributors": [
 
-    {
-      "name": "Dylan McDonald",
-      "email": "dylan@deepdivedylan.com"
-    },
     {
       "name": "George Kephart",
       "email": "gkephart@cnm.edu"
@@ -22,37 +18,28 @@
       "email": "mcrane2@cnm.edu"
     }
   ],
-  //  && strings together commands and insists that they do NOT fail or to stop the procedure
   "scripts": {
     "build": "rimraf public_html/dist && tsc && webpack --config webpack/webpack.live.js --progress --profile --bail"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/JeffreyCooper/angular4-example"
+    "url": "https://github.com/deepdivedylan/angular4-example"
   },
-  // these are tools creating aspects used and seen by the end user
   "dependencies": {
     "@angular/common": "~4.1.1",
     "@angular/compiler": "~4.1.1",
     "@angular/core": "~4.1.1",
     "@angular/forms": "~4.1.1",
-    // @angular/http is AJAX
     "@angular/http": "~4.1.1",
-    // following make angular load into the browser
     "@angular/platform-browser": "~4.1.0",
     "@angular/platform-browser-dynamic": "~4.1.1",
-    // configure fake URLs
     "@angular/router": "~4.1.1",
     "angular-in-memory-web-api": "~0.3.2",
     "core-js": "^2.4.1",
-    // rxjs are observables
     "rxjs": "^5.3.1",
-    // not strictly necessary for Angular, but bootstrap will use jQuery
     "jquery": "^3.2.1",
     "zone.js": "^0.8.10"
   },
-  // these are tools used in developing, but not seen/used by user
-  // the loaders below are webpack (not angular)
   "devDependencies": {
     "@types/node": "^7.0.18",
     "awesome-typescript-loader": "^3.1.3",
